@@ -60,13 +60,9 @@ const AppRoutes = () => {
 };
 
 const RouterComponent = () => {
-
-    const location = window.location.pathname;
-    const hideNavbar = location === '/login' || location === '/OTPComponent';
     return (
-        // <Router>
+        
             <AppRoutes />
-        // </Router>
     );
 };
 
