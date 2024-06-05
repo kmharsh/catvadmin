@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 const Navbar = ({ func }) => {
     const [openSubMenu, setOpenSubMenu] = useState(null);
 
@@ -48,9 +48,10 @@ const Navbar = ({ func }) => {
 
     return (
         <>
-
+        
             <nav id="navigation-bar">
                 <ul className="items-container">
+                  
                     <li className={`item ${isActive('/dashboard') ? 'active' : ''}`} title="home">
                         <Link to="/dashboard" className="hyper-link" onClick={() => handleMenuClick(false)}>
                             <div className="icon-wrapper">
