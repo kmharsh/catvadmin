@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes,useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Login from '../Component/Login/login';
 import OTPComponent from '../Component/OTPComponent/OTPComponent';
 import Dashboard from '../Component/pages/Dashborad';
@@ -60,8 +60,12 @@ const AppRoutes = () => {
 };
 
 const RouterComponent = () => {
+
+    const location = window.location.pathname;
+    const hideNavbar = location === '/login' || location === '/OTPComponent';
     return (
         <Router>
+            <Layout hideNavbar={hideNavbar} />
             <AppRoutes />
         </Router>
     );
