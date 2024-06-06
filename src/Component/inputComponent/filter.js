@@ -29,7 +29,7 @@ const TableDataFilter = ({ filterOptions, onSubmit, tableData }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='form-group w-100 d-flex align-items-end justify-content-start'>
+        <form onSubmit={handleSubmit} className=' w-100 d-flex align-items-end justify-content-start'>
             {filterOptions.map((option) => {
                 switch (option.type) {
                     case 'text':

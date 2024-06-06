@@ -40,7 +40,7 @@ const Customer = () => {
     return (
         <div className='container'>
             <div className="from-inner-wrp">
-                <form className="form-group w-100 d-flex align-items-end justify-content-start">
+                <form className=" w-100 d-flex align-items-end justify-content-start">
                     <div className="from-wrp w-75">
                         <label className="label"></label>
                         <input type="text" className="form-control" placeholder="Enter Account/Vc/Mac/Vsc/Rm" value="" />

@@ -44,7 +44,12 @@ const Navbar = ({ func }) => {
         }
     };
 
-    const isActive = (path) => location.pathname === path;
+    const isActive = (path) => {
+        const currentPath = location.pathname;
+        const active = currentPath === path || currentPath.startsWith(path);
+        console.log(`Checking if ${currentPath} is active for ${path}: ${active}`);
+        return active;
+    };
 
     const getImageSrc = (baseName, isActive) => `./images/faces-clipart/${baseName}${isActive ? 'active' : ''}.png`;
 
