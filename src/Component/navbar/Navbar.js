@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 const Navbar = ({ func }) => {
     const [openSubMenu, setOpenSubMenu] = useState(null);
+    const location = useLocation();
 
     useEffect(() => {
         const savedSubMenu = localStorage.getItem('openSubMenu');
@@ -42,16 +44,14 @@ const Navbar = ({ func }) => {
         }
     };
 
-    const isActive = (path) => window.location.pathname === path;
+    const isActive = (path) => location.pathname === path;
 
     const getImageSrc = (baseName, isActive) => `./images/faces-clipart/${baseName}${isActive ? 'active' : ''}.png`;
 
     return (
         <>
-        
             <nav id="navigation-bar">
                 <ul className="items-container">
-                  
                     <li className={`item ${isActive('/dashboard') ? 'active' : ''}`} title="home">
                         <Link to="/dashboard" className="hyper-link" onClick={() => handleMenuClick(false)}>
                             <div className="icon-wrapper">

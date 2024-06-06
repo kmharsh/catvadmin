@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Layout hideNavbar={hideNavbar}>
-      <RouterComponent/>
-      </Layout>
-</BrowserRouter>
+        <Layout hideNavbar={hideNavbar}>
+          <RouterComponent />
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
