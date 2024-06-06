@@ -8,29 +8,22 @@ const ErrorViewComponent = ({ handleEdit }) => {
                         Error
                     </h4>
                 </div>
-                <div className='background-color w-100 m-0 p-5'>
-                    <div className="row flex-column border">
-                        <div className="col-sm mt-2">
-                            <div className=" d-flex justify-content-start">
-                                <h6 className="card-title w-15">Account Number :</h6>
-                                <p className="card-text">123-456-7890</p>
-                            </div>
-                        </div>
-                        <div className="col-sm mt-2">
-                            <div className=" d-flex justify-content-start">
-                                <h6 className="card-title w-15">Api Name :</h6>
-                                <p className="card-text">Get_sreach_user_details</p>
-                            </div>
-                        </div>
-                        <div className="col-sm mt-2">
-                            <div className=" d-flex justify-content-start">
-                                <h6 className="card-title w-15">TimeSpent :</h6>
-                                <p className="card-text">2021-12-21 11:23:33</p>
-                            </div>
-                        </div>
-                        
+                <div class='grid-container'>
+                    <div class='form-group flex-column d-flex'>
+                        <strong>Account Number</strong>
+                        <span>123-456-7890</span>
                     </div>
+                    <div class='form-group flex-column d-flex'>
+                        <strong>Api Name</strong>
+                        <span>Get_sreach_user_details</span>
+                    </div>
+                    <div class='form-group flex-column d-flex'>
+                        <strong>TimeSpent</strong>
+                        <span>2021-12-21 11:23:33</span>
+                    </div>
+                   
                 </div>
+
 
             </div>
         </>

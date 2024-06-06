@@ -13,32 +13,22 @@ const RoleViewComponent = ({ handleEdit }) => {
                         onClick={handleEdit}
                         className="btn btn-warning rounded font-weight-bolder mx-2 text-center" />
                 </div>
-                <div className='background-color w-100 m-0 p-5'>
-                    <div className="row flex-column border">
-                        <div className="col-sm mt-2">
-                            <div className=" d-flex justify-content-start">
-                                <h6 className="card-title w-15">Name :</h6>
-                                <p className="card-text">John Doe</p>
-                            </div>
-                        </div>
-                        <div className="col-sm mt-2">
-                            <div className=" d-flex justify-content-start">
-                                <h6 className="card-title w-15">Phone :</h6>
-                                <p className="card-text">123-456-7890</p>
-                            </div>
-                        </div>
-                        <div className="col-sm mt-2">
-                            <div className=" d-flex justify-content-start">
-                                <h6 className="card-title w-15">Email :</h6>
-                                <p className="card-text">john@example.com</p>
-                            </div>
-                        </div>
-                        <div className="col-sm mt-2">
-                            <div className=" d-flex justify-content-start">
-                                <h6 className="card-title w-15">Role :</h6>
-                                <p className="card-text">sub</p>
-                            </div>
-                        </div>
+                <div class='grid-container'>
+                    <div class='form-group flex-column d-flex'>
+                        <strong>Name</strong>
+                        <span>sub</span>
+                    </div>
+                    <div class='form-group flex-column d-flex'>
+                        <strong>Phone</strong>
+                        <span>inner</span>
+                    </div>
+                    <div class='form-group flex-column d-flex'>
+                        <strong>Email</strong>
+                        <span>innergjkh</span>
+                    </div>
+                    <div class='form-group flex-column d-flex'>
+                        <strong>Role</strong>
+                        <span>dffm</span>
                     </div>
                 </div>
 

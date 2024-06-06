@@ -11,7 +11,7 @@ const AddUpdateRole = ({ isUpdate }) => {
         }
     };
     const formElements = [
-        { type: 'text', name: 'name', options: { placeholder: 'Enter name', className: 'form-control w-100 ' , label:"Name" } },
+        { type: 'text', name: 'name', options: { placeholder: 'Enter name', className: 'form-control w-25 ' , label:"Name" } },
         { type: 'checkbox', name: 'agree', options: { label: 'Create Role' } },
         { type: 'checkbox', name: 'agree', options: { label: 'View Role' } },
         { type: 'checkbox', name: 'agree', options: { label: 'Edit Role' } },
@@ -22,7 +22,7 @@ const AddUpdateRole = ({ isUpdate }) => {
         { type: 'checkbox', name: 'agree', options: { label: 'Delete Permission' } },
     ];
     return (
-        <div className=' background-color'>
+        <div className='background-color role'>
             <DynamicForm 
             elements={formElements} 
             onSubmit={handleAddUpdatePermission} 
