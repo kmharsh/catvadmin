@@ -850,3 +850,37 @@ body {
 .form-group strong {
   font-weight: bold;
 }
+
+/* dashborad */
+.chart-container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px;
+  padding: 10px;
+}
+.total-wrp li {
+  list-style: none;
+  background-color: #fff;
+  padding: 20px 10px;
+  margin: 0 10px 20px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.total-wrp li .count{
+  display: block;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(115deg, hsl(0, 100%, 50%), hsl(261, 100%, 44%));
+  font-weight: 700;
+  font-size: 38px;
+}
+.total-wrp li .labelname{
+    font-size: 20px;
+    font-weight: 700;
+
+}
