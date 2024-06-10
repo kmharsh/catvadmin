@@ -47,7 +47,7 @@ const OTPComponent = () => {
 
                                 </div>
                                 <div className="half p-4 py-md-5 bg-primary">
-                                    <div className="form-group">
+                                    <div className="">
                                     <Button label="Submit" onClick={() =>""} className="form-control btn btn-secondary rounded  px-3" />
                                     </div>
                                 </div>

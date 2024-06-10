@@ -46,11 +46,11 @@ const Login = () => {
                                     />
                                 </div>
                                 <div className="half p-4 py-md-5 bg-primary">
-                                    <div className="form-group">
+                                    <div className="">
                                        
                                         <Button label="Sign me in now" onClick={() => console.log('Search button clicked')} className="form-control btn btn-secondary rounded  px-3" />
                                     </div>
-                                    <div className="form-group d-md-flex ali-items-base">
+                                    <div className=" d-md-flex ali-items-base">
                                         <div className="text-md-right">
                                             <a href="#">Forgot Password</a>
                                         </div>
