@@ -857,11 +857,12 @@ body {
   margin: 10px;
   padding: 10px;
 }
+
 .total-wrp li {
   list-style: none;
   background-color: #fff;
   padding: 20px 10px;
-  margin: 0 10px 20px;
+  margin: 0 10px 10px 0;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 30%;
@@ -871,7 +872,8 @@ body {
   flex-wrap: wrap;
 
 }
-.total-wrp li .count{
+
+.total-wrp li .count {
   display: block;
   -webkit-background-clip: text;
   color: transparent;
@@ -879,8 +881,93 @@ body {
   font-weight: 700;
   font-size: 38px;
 }
-.total-wrp li .labelname{
-    font-size: 20px;
-    font-weight: 700;
+
+.total-wrp li .labelname {
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.img-fluid {
+  min-width: 100px;
+}
+
+@media (max-width:1025px) {
+  .user-profile {
+    width: 50%;
+    text-align: end;
+  }
+
+  .content-wrp {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .app {
+    max-width: 49px;
+    left: 0;
+    position: absolute;
+
+  }
+  .items-container.submenu{
+    padding-left: 0;
+  }
+
+  /* Define styles for the sidebar */
+  .sidebar-wrapper {
+    position: fixed;
+    top: 118px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* Adjust as needed */
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    /* Ensure sidebar is above other content */
+  }
+
+  /* Hide the sidebar by default */
+  .hideSideBar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Show the sidebar when active */
+  .showSideBar {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  /* Apply margin to children when sidebar is shown */
+  .sidebar-margin {
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+    /* Adjust to match sidebar width */
+  }
+
+  /* Define styles for the mobile navigation toggle */
+  .mobile-nav-toggle {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    cursor: pointer;
+    z-index: 99999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    color: #000;
+    display: block;
+    text-align: center;
+    margin-top: 3px;
+  }
+
 
 }

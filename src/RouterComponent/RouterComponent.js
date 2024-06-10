@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Login from '../Component/Login/login';
 import OTPComponent from '../Component/OTPComponent/OTPComponent';
 import Dashboard from '../Component/pages/Dashborad';
@@ -25,13 +25,27 @@ import ErrorViewComponent from '../Component/pages/ErrorViewComponent';
 import ThridPartViewComponent from '../Component/pages/ThridPartViewComponent';
 import PaymentViewComponent from '../Component/pages/PaymentViewComponent';
 
-const AppRoutes = () => {
+const MainLayout = ({ children }) => {
     const location = useLocation();
-    const hideSideNavPaths = ['/', '/OTPComponent'];
+    const hideSideNavPaths = ['/', '/OTPComponent', '/login'];
     const shouldHideSideNav = hideSideNavPaths.includes(location.pathname);
 
     return (
+        <div>
+            {!shouldHideSideNav && <Layout />}
+            <div>
+                {children}
+            </div>
+        </div>
+    );
+};
+
+const AppRoutes = () => {
+    return (
         <Routes>
+            <Route path="/" element={<Navigate to="/login" />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/OTPComponent" element={<OTPComponent />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="customer" element={<Customer />} />
             <Route path="accessLog" element={<AccessLog />} />
@@ -53,16 +67,16 @@ const AppRoutes = () => {
             <Route path="ThridPartViewComponent" element={<ThridPartViewComponent />} />
             <Route path="PaymentViewComponent" element={<PaymentViewComponent />} />
             <Route path="userProfile" element={<UserProfile />} />
-            <Route path="/OTPComponent" element={<OTPComponent />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
     );
 };
 
 const RouterComponent = () => {
     return (
-        
-            <AppRoutes />
+
+        <AppRoutes />
+
     );
 };
 
