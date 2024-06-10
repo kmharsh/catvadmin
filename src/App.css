@@ -465,6 +465,7 @@ body {
 
 .user-profile {
   width: 20%;
+  cursor: pointer;
 }
 
 .justify-content-space-between {

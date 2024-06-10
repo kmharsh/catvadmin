@@ -12,6 +12,7 @@ import Setting from '../Component/pages/Setting';
 import ThirdpartyLog from '../Component/pages/ThirdpartyLog';
 import User from '../Component/pages/User';
 import UserProfile from '../Component/pages/UserProfile';
+import Profile from '../Component/pages/profile';
 import Permission from '../Component/pages/Permission';
 import Otppage from '../Component/pages/Otppage';
 import AddUpdateuser from '../Component/pages/AddUpdateuser';
@@ -53,6 +54,7 @@ const AppRoutes = () => {
             <Route path="ThridPartViewComponent" element={<ThridPartViewComponent />} />
             <Route path="PaymentViewComponent" element={<PaymentViewComponent />} />
             <Route path="userProfile" element={<UserProfile />} />
+            <Route path="Profile" element={<Profile />} />
             <Route path="/OTPComponent" element={<OTPComponent />} />
             <Route path="/login" element={<Login />} />
         </Routes>

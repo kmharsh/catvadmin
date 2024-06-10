@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import UserProfile from '../pages/UserProfile';
 
@@ -7,7 +7,6 @@ const Layout = ({ children, hideNavbar }) => {
     const x = () => {
         setShowPanel(!showPanel)
     }
-
     return (
         <div>
             <div className='content-wrp'>
@@ -17,7 +16,7 @@ const Layout = ({ children, hideNavbar }) => {
                     </div>
                 }
                 <div className='d-flex align-items-start'>
-                    {showPanel}
+                    
                     {(!hideNavbar) &&
                         <div className={showPanel ? 'showSideBar app w-25 sticky-left' : 'hideSideBar app'}>
                             <Navbar />
