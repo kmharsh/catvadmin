@@ -46,8 +46,8 @@ const Navbar = ({ func }) => {
 
     const isActive = (path) => {
         const currentPath = location.pathname;
-        const active = currentPath === path || currentPath.startsWith(path);
-       
+        // Set Dashboard as active if the path is root or matches the given path
+        const active = currentPath === path || currentPath.startsWith(path) || (path === '/dashboard' && currentPath === '/');
         return active;
     };
 
@@ -78,7 +78,7 @@ const Navbar = ({ func }) => {
                         </Link>
                     </li>
                     <li className={`item ${openSubMenu === 1 ? 'active' : ''}`}>
-                        <a className="hyper-link" onClick={() => toggleSubMenu(1)}>
+                        <div className="hyper-link" onClick={() => toggleSubMenu(1)}>
                             <div className="icon-wrapper">
                                 <span className="material-symbols-outlined">
                                     <img src={getImageSrc('logs', openSubMenu === 1)} alt="logs" />
@@ -86,7 +86,7 @@ const Navbar = ({ func }) => {
                                 </span>
                             </div>
                             <span className="down-arrow">&#9662;</span>
-                        </a>
+                        </div>
                     </li>
                     <ul className={`items-container submenu ${openSubMenu === 1 ? 'submenu-enter submenu-enter-active' : 'submenu-exit submenu-exit-active'}`}>
                         <li className={`item ${isActive('/AccessLog') ? 'active' : ''}`}>

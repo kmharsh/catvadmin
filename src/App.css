@@ -283,13 +283,16 @@ body {
 
 .social-media .social-icon {
   display: block;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  background: #fff;
-  font-size: 16px;
-  margin: 0 5px;
-  border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    background: #fff;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: #000;
+    padding: 8px 14px;
+    cursor: pointer;
 }
 
 .social-media .social-icon span {
