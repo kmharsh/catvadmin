@@ -150,16 +150,16 @@ const Dashboard = () => {
             </div>
             <div className="dashboard mt-5">
                 <div className="d-flex justify-content-start flex-wrap row">
-                    <div className="chart-container  col-4">
+                    <div className="chart-container  col-5">
                         <ChartCard title="Access Log" data={accessLogData} />
                     </div>
-                    <div className="chart-container  col-4">
+                    <div className="chart-container  col-5">
                         <ChartCard title="OTP Page" data={otpPageData} />
                     </div>
-                    <div className="chart-container  col-4">
+                    <div className="chart-container  col-5">
                         <ChartCard title="Payment Details" data={paymentDetailsData} />
                     </div>
-                    <div className="chart-container  col-4">
+                    <div className="chart-container  col-5">
                         <ChartCard title="Complaints" data={complaintsData} />
                     </div>
                 </div>

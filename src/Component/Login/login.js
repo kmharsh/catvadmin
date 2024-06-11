@@ -50,7 +50,8 @@ const Login = () => {
                                        
                                         <Button label="Sign me in now" onClick={() => console.log('Search button clicked')} className="form-control btn btn-secondary rounded  px-3" />
                                     </div>
-                                    <div className=" d-md-flex ali-items-base">
+                                    <div className='d-md-flex ali-items-base mrg-top'>
+                                    <div className=" d-md-flex ali-items-base w-100">
                                         <div className="text-md-right">
                                             <a href="#">Forgot Password</a>
                                         </div>
@@ -61,6 +62,8 @@ const Login = () => {
                                             <a href="#" className="social-icon d-flex align-items-center justify-content-center"><span className="fa fa-twitter"></span></a>
                                         </p>
                                     </div>
+                                    </div>
+                                    
                                 </div>
                             </form>
                         </div>
