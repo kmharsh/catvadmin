@@ -2,7 +2,7 @@ import React from 'react';
 
 const TwitterLogin = () => {
     const handleTwitterLogin = () => {
-        window.location.href = 'http://localhost:3000/twitter';
+        window.location.href = '/dashboard';
     };
 
     return (
